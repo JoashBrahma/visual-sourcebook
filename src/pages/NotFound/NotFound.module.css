@@ -1,0 +1,24 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound p {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+}
+
+.notFound button {
+  background-color: var(--bg-color-surface-2);
+  padding: var(--space-md) var(--space-xl);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .notFound button:hover {
+    background-color: var(--bg-color-surface-hover);
+  }
+}

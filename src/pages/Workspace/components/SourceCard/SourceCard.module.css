@@ -1,0 +1,103 @@
+.sourceCard {
+  break-inside: avoid;
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  box-shadow: 2px 2px 2px gray;
+}
+
+.thumbnailWrapper {
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+}
+
+.sourceUrl {
+  text-decoration: none;
+}
+
+.thumbnail {
+  cursor: pointer;
+  transition: transform 240ms ease;
+}
+
+.sourceTitle {
+  min-height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.6) 25%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.2) 75%,
+      transparent 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(0.25rem);
+  font-size: var(--text-sm);
+  padding: var(--space-md);
+  line-height: var(--leading-normal);
+}
+
+.thumbnailFallback {
+  aspect-ratio: 4 / 3;
+  background-color: var(--bg-color-surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-muted);
+  font-size: var(--text-sm);
+  padding: var(--space-md);
+  line-height: var(--leading-normal);
+  text-align: center;
+  transition: background-color 240ms ease;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.button {
+  --bg-color: var(--bg-color-surface-2);
+  --bg-color-hover: var(--bg-color-surface-hover);
+
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-none);
+  background-color: var(--bg-color);
+}
+
+.deleteButton {
+  --bg-color: #dc26261f;
+  --bg-color-hover: #dc262633;
+}
+
+.icon {
+  height: 70%;
+  width: 70%;
+  background-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  .thumbnailFallback:hover {
+    background-color: var(--bg-color-surface-hover);
+  }
+
+  .button:hover {
+    background-color: var(--bg-color-hover);
+  }
+}

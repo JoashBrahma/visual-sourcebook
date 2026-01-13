@@ -1,0 +1,10 @@
+.sourceGallery {
+  /* min-height: 100vh; */
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: var(--space-7xl);
+  padding-bottom: var(--space-2xl);
+  padding-inline: var(--space-md);
+  position: relative;
+}

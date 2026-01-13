@@ -1,0 +1,48 @@
+.topBar {
+  min-height: 60px;
+  width: 100%;
+  padding-inline: var(--space-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  position: fixed;
+  z-index: 99;
+  background-color: #0b0d10dd;
+  backdrop-filter: blur(0.125rem);
+}
+
+.searchInput {
+  max-width: 380px;
+}
+
+.button {
+  --bg-color: var(--bg-color-surface-1);
+  --bg-color-hover: var(--bg-color-surface-hover);
+
+  min-height: 42px;
+  min-width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.buttonIcon {
+  height: 70%;
+  width: 70%;
+  background-color: transparent;
+}
+
+.addButton {
+  --bg-color: #16a34a;
+  --bg-color-hover: #15803d;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .button:hover,
+  .addButton:hover {
+    background-color: var(--bg-color-hover);
+  }
+}

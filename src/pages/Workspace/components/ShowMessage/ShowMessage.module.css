@@ -1,0 +1,9 @@
+.message {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--text-lg);
+  color: var(--text-color-muted);
+}

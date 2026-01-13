@@ -1,0 +1,5 @@
+.sourceMasonry {
+  width: 100%;
+  column-width: 18rem;
+  gap: var(--space-md);
+}
