@@ -19,7 +19,7 @@ function App() {
           </SourceReferencesProvider>
         }
       />
-      <Route path="/*" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes >
   );
 }
