@@ -40,7 +40,7 @@ function Home() {
       </section>
 
       <footer className={styles.footer}>
-        <a href="#">
+        <a href="https://github.com/JoashBrahma/visual-sourcebook" target="_blank" rel="noreferrer">
           <RiGithubFill className={styles.footerIcon} />
         </a>
       </footer>
